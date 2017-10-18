@@ -1,12 +1,13 @@
 pkgbase = joustmania-git
 	pkgdesc = JoustMania is a collection of PlayStation Move enabled party games
-	pkgver = v1.0.136.g8a8fea8
+	pkgver = v1.0.141.gfd0a555
 	pkgrel = 1
 	url = joustmania.com
 	arch = any
 	license = MIT
 	makedepends = git
 	depends = python
+	depends = rfkill
 	depends = python-dbus
 	depends = psmoveapi-git
 	depends = sdl
