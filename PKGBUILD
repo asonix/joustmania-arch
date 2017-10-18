@@ -2,7 +2,7 @@
 
 _pkgname=joustmania
 pkgname=${_pkgname}-git
-pkgver=v1.0.141.gfd0a555
+pkgver=v1.0.148.ge0175e7
 pkgrel=1
 pkgdesc="JoustMania is a collection of PlayStation Move enabled party games"
 url="joustmania.com"
@@ -12,8 +12,9 @@ depends=('python' 'rfkill' 'python-dbus' 'psmoveapi-git' 'sdl' 'sdl_mixer' 'sdl_
 makedepends=('git')
 provides=(${_pkgname})
 conflicts=(${_pkgname})
-source=("${_pkgname}::git+https://github.com/adangert/joustmania.git" 'joustmania.sh')
-md5sums=('SKIP' 'SKIP')
+_branch='asonix/remove-hci-config'
+source=("${_pkgname}::git+https://github.com/asonix/joustmania.git#branch=${_branch}" 'joustmania.sh')
+md5sums=('SKIP' 'fa32f32e174c567193811f12c018b31f')
 
 pkgver() {
   cd "${srcdir}/${_pkgname}"

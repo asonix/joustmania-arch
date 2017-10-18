@@ -1,6 +1,6 @@
 pkgbase = joustmania-git
 	pkgdesc = JoustMania is a collection of PlayStation Move enabled party games
-	pkgver = v1.0.141.gfd0a555
+	pkgver = v1.0.148.ge0175e7
 	pkgrel = 1
 	url = joustmania.com
 	arch = any
@@ -39,10 +39,10 @@ pkgbase = joustmania-git
 	depends = python-yaml
 	provides = joustmania
 	conflicts = joustmania
-	source = joustmania::git+https://github.com/adangert/joustmania.git
+	source = joustmania::git+https://github.com/asonix/joustmania.git#branch=asonix/remove-hci-config
 	source = joustmania.sh
 	md5sums = SKIP
-	md5sums = SKIP
+	md5sums = fa32f32e174c567193811f12c018b31f
 
 pkgname = joustmania-git
 
